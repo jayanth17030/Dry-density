@@ -1,0 +1,376 @@
+:root{
+    --main-color: rgb(204, 204, 255);
+    --black:#333;
+    --white:#fff;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgb(0, 0, 255);
+}
+*{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+}
+*::selection{
+    background-color: var(--main-color);
+    color:var(--white);
+}
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+
+.header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    color: var(--black);
+}
+.header .flex .navbar a:hover{
+    text-decoration: underline;
+    color: var(--main-color);
+
+}
+.heading{
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+.calculator{
+    background-color: var(--main-color);
+    width: 100%;
+}
+.temp{
+    height: 5rem;
+}
+
+
+.mould{
+
+    background-color:rgba(0,0,255,0.3);
+    margin-left: 5rem;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 1rem;
+    line-height: 2.5;
+    /* text-align: center; */
+}
+.mould input{
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+.button {
+    background-color: blue;
+    border-radius: 0.5rem;
+    width: 8rem;
+    height: 2rem;
+    margin-left: 15rem;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    
+    
+
+}
+#height{
+    margin-left: 5rem;
+}
+#diameter{
+    margin-left: 3.8rem;
+}
+#weight, #weightofMould{
+    margin-left: 4.8rem;
+}
+.disp{
+    display: flex;
+}
+
+.para{
+    font-size: 2rem;
+    text-align: center;
+}
+.sec{
+    background-color:rgba(0,0,255,0.3);;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 1rem;
+    line-height: 2.5;
+}
+.observations{
+    margin-left: 5rem;
+    width: 10rem;
+    text-align: center;
+}
+.wetSoil input{
+    width: 19rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+#mouldAndSoil{
+    margin-left: 0.7rem;
+}
+#emptyCup{
+    margin-left: 10.7rem;
+}
+#cupAndSoil{
+    margin-left: 1.5rem;
+}
+#ovenDried{
+    margin-left: 3.6rem;
+    
+}
+.box{
+    border: var(--border);
+    padding-top: 4rem;
+    padding-right: 4rem;
+    margin-right: 25rem;
+    margin-left: 5rem;
+    background-color: rgba(0,0,255,0.3);
+}
+
+
+/* faq start*/
+.faq1{
+    background-color: var(--main-color);
+    width: 100%;
+    line-height: 2.5;
+}
+.faq2{
+    border: var(--border);
+    margin-top: 5rem;
+    padding: 4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    background-color: rgba(0,0,255,0.3);
+}
+.faqHead{
+    text-align: center;
+    font-size: 3rem;
+}
+.qns b{
+    font-size: 1.5rem;
+
+}
+.qn1{
+    background-color:rgba(0,0,255,0.3);
+    border: var(--border);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.qn2{
+    background-color:rgba(0,0,255,0.3);
+    border: var(--border);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.qn3{
+    background-color:rgba(0,0,255,0.3);
+    border: var(--border);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.qn4{
+    background-color:rgba(0,0,255,0.3);
+    border: var(--border);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.qn5{
+    background-color:rgba(0,0,255,0.3);
+    border: var(--border);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.qn6{
+    background-color:rgba(0,0,255,0.3);
+    border: var(--border);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+/* faq ends */
+/* contact starts */
+.contactImg{
+    width: 600px;
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+.ContactHeading{
+    background-color: var(--main-color);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--main-color);
+}
+.contact .row .image{
+    flex: 1 1 50rem;
+}
+.contact.row .image img{
+    width: 100%;
+}
+.contact .row form{
+    flex: 1 1 30rem;
+    border: var(--border);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    background-color:rgba(0,0,255,0.3)
+
+}
+.contact .row form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+.contact .row form .box{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    background-color: white;
+    border-radius: 1rem;
+}
+#contactBtn{
+    margin-right: 15rem;
+    height: 3rem;
+}
+
+/* contact ends */
+/* about starts */
+.about{
+    background-color: var(--main-color);
+    line-height: 3rem;
+    border: var(--border);
+    margin: 3rem;
+}
+
+.aboutHead{
+    text-align: center;
+    margin: 3rem;
+}
+.aboutContent{
+    margin: 4rem;
+    border: var(--border);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.aboutContent img{
+    margin: 5rem;
+    margin-left: 22rem;
+}
+.table{
+    margin-left: 15rem;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+.content-table thead tr {
+    background-color: rgba(0,0,255,0.3);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid rgba(0,0,255,0.3); 
+}
+
+/* about ends */
+/* procedure starts */
+.procedure{
+    background-color: var(--main-color);
+    padding: 5rem;
+    line-height: 3rem;
+}
+.procedureHead{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.procedureContent{
+    border: var(--border);
+    padding: 3rem;
+    background-color: rgba(0,0,255,0.3);
+}
+.procedureContent img{
+    margin-left: 25rem;
+}
+.procHead{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.sides{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.objective, .reference, .apparatus, .sample, .proc, .calculation, .report, .safety {
+    margin-bottom: 2rem;
+    border: var(--border);
+    padding: 2rem;
+    background-color: rgba(0,0,255,0.3);
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-top: var(--border);
+    font-size: 1.5rem;
+    color: var(--black);
+
+}
+.footer .credit span{
+    color: blue;
+}

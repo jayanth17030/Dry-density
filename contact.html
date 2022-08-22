@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <section class="flex" id="jayanth">
+            <a href="index.html"><h1 class="heading">Dry Density Calculator</h1></a>
+    
+            <nav class="navbar">
+                <a href="index.html">Calculator</a>
+                <a href="procedure.html">Test Procedure</a>
+                <a href="about.html">About Test</a>
+                <a href="page2.html">faq</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        </section>
+    </header>
+    <section class="contact" id="contact">
+        <div class="ContactHeading">
+
+            <h3 >Contact</h3>
+        </div>
+        
+        <div class="row">
+            <div class="image">
+                <img class="contactImg" src="contact.png" alt="">
+            </div>
+        
+            <form onsubmit="sendEmail(); reset();return false;">
+                <h3>POST HERE</h3>
+                <input type="text" class="box"
+                placeholder="enter your Name" required>
+                <input type="email" id="email" class="box"
+                placeholder="enter your email" required>
+                <textarea class="box"
+                placeholder="enter your question or comment" required></textarea>
+
+                <input type="submit"  name="send" value="submit" class="button" id="contactBtn">
+            </form>
+        </div>
+        <section class="footer">
+            <div class="credit">&copy; copyright @ 2022 by <span>jayanth_siraparapu</span> | all rights reserved!</div>
+        
+        </section>
+    </section>
+
+    
+</body>
+</html>
